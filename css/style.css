@@ -5,49 +5,45 @@ ul.hr {
    
    
 ul.hr li {
-    display: inline; /* Отображать как строчный элемент */
-	
+    display: inline; 	
    }
    
-ul.hr2 {
+ul.toplist-page__toplist {
 	margin-left: 40%;
    }
 
-ul.hr2 li {
-   font-size: 22px; /* Отображать как строчный элемент */
+ul.toplist-page__toplist  li {
+   font-size: 22px; 
    }
 
-div.relative{
+
+div.logo {
 	margin-left: 3%;
 	position: relative;
 	position: absolute;
 	display: inline;
+	
 }
-
    
-div.divclass {
+div.header {
+	
 	padding-top: 15px;
 	margin-left: 12%;
 	margin-right: 12%;
-	height: 180px; /* Высота */
-    background: #FFF; /* Цвет фона */
+	height: 180px; 
+    background: #FFF; 
 	opacity: 0.94;
 	
 }  
 
-div.divclass2 {
+div.content {
 	padding: 50px;
 	margin-left: 12%;
 	margin-right: 12%;
-	height: 765px; /* Высота */
-	background-color: rgba(199, 208, 204, 0.96)
-	/*background: #C7D0CC; opacity: 0.95;*/
+	height: 765px; 
+	background-color: rgba(199, 208, 204, 0.96);
 }  
 
-div.divclass3 {
-	 display: inline;
-	
-} 
 
 body.background{
 	background-image: url(../img/bg.jpg);
@@ -105,27 +101,13 @@ div.main {
 	z-index: 1;
 }
 
-.button1 {
-	float: left;
-	min-width: 150px;
-	max-width: 250px;
-	display: block;
-	margin: 1em;
-	padding: 1em 2em;
-	border: none;
-	background: #7300AA;
-	color: inherit;
-	vertical-align: middle;
-	position: relative;
-	z-index: 1;
+.button-active {
+	background: #7300AA;	
 }
+
 
 .button--size-l {
 	font-size: 18px;
-}
-
-.button--round-l {
-	border-radius: 40px;
 }
 
 .button--border-thin {
@@ -172,8 +154,6 @@ div.main {
 .hbut {
 	color: #000;
 	text-decoration: none;
-	
-
 }
 
 

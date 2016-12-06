@@ -1,0 +1,21 @@
+<div ng-controller="pagesController">
+		<menu current="page"></menu>	
+
+<center> 
+    <div class = "content"> 
+    <table>
+    <tr>
+     <th>Place</th>
+      <th>Name</th>
+      <th>Score</th>
+    </tr>
+    <tr ng-repeat="user in users | orderBy:'score':!reverse">
+      <td>{{$index+1}} </td>
+      <td>{{user.name}}</td>
+      <td>{{user.score}}</td>
+    </tr>
+    </table>
+	</div> 
+</center>
+</div>
+

@@ -1,0 +1,15 @@
+<div menu class="header">
+<div ng-controller="pagesController">
+
+	<div class="logo">
+
+	<a href="index.php"><img src="img/logo.png" width="175" height="109" alt="Home page"> </a>
+	
+	</div>
+<ul class="hr" >
+	<center> 
+	
+	<li> <a ng-repeat = "item in names" class= "button button--ujarak button--border-thin button--text-thick button--size-l hbut" ng-class="{'button-active':current==item.id}" ng-href= "#/page/{{item.id}}"> {{item.title}} </a> </li></center>
+</ul>
+</div>	
+</div>

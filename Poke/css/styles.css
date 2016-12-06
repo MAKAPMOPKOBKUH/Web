@@ -1,0 +1,269 @@
+
+div.content {
+	padding: 50px;
+	margin-left: 12%;
+	margin-right: 12%;
+	height: 665px; 
+	background-color: rgba(199, 208, 204, 0.96);
+}  
+
+a.bord {
+    padding: 5px;
+	background-color: white;	
+}
+a:visited { 
+	color: black;
+} 
+a:hover {    
+    color: red; 	
+} 
+
+
+div.logo {
+	margin-left: 3%;
+	position: relative;
+	position: absolute;
+	display: inline;
+	
+}
+   
+   
+ul.hr {
+    
+    padding: 4px;
+	position: relative;
+	position: absolute;
+	
+	margin-left: 17%;
+	
+	display: inline;
+}
+ul.hr li {
+    display: inline; /* Отображать как строчный элемент */
+	
+	
+}
+
+ul.forLi {
+    width: 1%;
+    margin: auto;
+}
+	
+li.list {
+	
+    margin:0px auto 0px auto;
+	text-align: center;
+	font-weight: 600;
+	font-size: 18;
+	white-space: nowrap;
+}
+a.bordActiveLink {
+    padding: 5px;
+	pointer-events: none;
+	background-color: #ffd622;
+}
+.styleText{
+	font-family: Century Gothic;
+	font-size: 18;
+	text-indent: 40px;
+}
+body{
+	background-image: url(../img/bg.jpg);
+}
+
+
+   
+button.startButton {
+	border: 1px solid black;
+	text-align: solid center ;
+	font-size: 20;
+	background-color: white;
+	padding: 4px;
+	top: 40%;
+	left: 45%; 
+	width: 190px; 
+	height: 40px; 
+	position: absolute; 
+	margin-top: -0px; 
+	margin-left: -0px;
+}
+div.textToCentre{
+	position: absolute; 
+	top: 35%; left: 47%; 
+	width: 40px;
+}
+
+
+.pole{
+    position: relative;
+    width: 90%;
+    height: 75%;
+    /*background: #0B580B;*/
+}
+.ball{
+    position: relative;
+    width: 5em;
+    height: 5em;
+    /*background: yellow;*/
+    border-radius: 2em;
+}
+div.timer {	
+	position: absolute;
+	font-family: Century Gothic;
+	font-size: 22;
+	top: 20%;	
+	
+	float: right;
+}
+
+div.start{
+	text-decoration: none;
+	display: inline;
+	font-family: Century Gothic;
+	font-size: 22;	
+	text-decoration: none;
+    padding: 5px;
+	background-color: white;
+	box-shadow: none;	
+	top: 30%;
+	right: 51%; 
+	position: absolute; 
+}
+
+div.start:hover {    
+    cursor:pointer;	
+    color: white;
+} 
+
+div.finish{
+	text-decoration: none;
+	display: inline;
+	font-family: Century Gothic;
+	font-size: 22;	
+	text-decoration: none;
+    padding: 5px;
+	background-color: white;
+	box-shadow: none;
+	top: 30%;
+	right: 46%; 
+	position: absolute; 		
+}
+
+div.finish:hover {     
+    cursor:pointer;	
+    color: white;
+} 
+
+div.health {	
+	position: absolute;
+	font-family: Century Gothic;
+	font-size: 22;
+	color: green;
+	top: 30%;
+	display: inline;
+	
+}
+
+div.score {	
+	position: absolute;
+	font-family: Century Gothic;
+	font-size: 22;
+	left: 30%;
+	top: 30%;
+	display: inline;
+	
+}
+
+div.pokemon {	
+	position: absolute;
+	font-family: Century Gothic;
+	font-size: 22;
+	left: 60%;
+	top: 20%;
+	float: right;
+	display: inline;
+}
+div.header {
+	
+	padding-top: 15px;
+	margin-left: 12%;
+	margin-right: 12%;
+	height: 180px; 
+    background: #FFF; 
+	opacity: 0.94;
+	
+}  
+
+/*Кнопки*/
+
+.button {
+	float: left;
+	min-width: 150px;
+	max-width: 250px;
+	display: block;
+	margin: 1em;
+	padding: 1em 2em;
+	border: none;
+	background: none;
+	color: inherit;
+	vertical-align: middle;
+	position: relative;
+	z-index: 1;
+}
+
+.button-active {
+	background: #7300AA;	
+}
+
+
+.button--size-l {
+	font-size: 18px;
+}
+
+.button--border-thin {
+	border: 1px solid;
+}
+
+.button--ujarak {
+	-webkit-transition: border-color 0.4s, color 0.4s;
+	transition: border-color 0.4s, color 0.4s;
+}
+.button--ujarak::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #7300AA;
+	z-index: -1;
+	opacity: 0;
+	-webkit-transform: scale3d(0.7, 1, 1);
+	transform: scale3d(0.7, 1, 1);
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+	transition: transform 0.4s, opacity 0.4s;
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.button--ujarak,
+.button--ujarak::before {
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+.button--ujarak:hover {
+	color: #fff;
+	border-color: #37474f;
+}
+.button--ujarak:hover::before {
+	opacity: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.hbut {
+	color: #000;
+	text-decoration: none;
+}
+
+
